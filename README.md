@@ -34,3 +34,14 @@ The base code for this project was adapted from Nicholas Renotte. While the orig
 
 ## Installation 💻
 To run the app.py Stable Diffusion project, you'll need to install the following dependencies:
+
+*pip install torch==2.5.1*    -  download from here: **https://pytorch.org/**
+
+*pip install customtkinter==5.2.2*
+
+*pip install diffusers==0.31.0*  
+
+*pip install Pillow==10.2.0*  
+
+## Hugging FaceToken 🤗
+https://huggingface.co/docs/hub/security-tokens
