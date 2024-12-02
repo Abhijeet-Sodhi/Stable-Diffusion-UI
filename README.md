@@ -93,7 +93,7 @@ The image space is huge a 512x512 RGB image has ~786,000 dimensions, which makes
 
 **(2)** Decoder restores the image from the latent space.
 
-##Training Stable Diffusion 📚
+## Training Stable Diffusion 📚
 
 **Latent Noise in Latent Space:**
 Instead of directly adding noise to pixel images, noise is added to a compressed latent space (instead of generating a noisy image, it generates a random tensor in latent space (latent noise)). This speeds up training since the latent space is much smaller than pixel space.
@@ -106,7 +106,7 @@ During generation, the U-Net removes noise step-by-step from a random latent ten
 
 ![cat](https://github.com/user-attachments/assets/b44035cc-29eb-4b1e-8645-58c264fb5da6)
 
-##How Text Guides Image Generation: 🔋
+## How Text Guides Image Generation: 🔋
 
 **Tokenization:**
 Words in the text prompt are broken into tokens. For example, "blue sky" becomes tokens for "blue" and "sky."
