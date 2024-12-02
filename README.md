@@ -8,6 +8,14 @@ The base code for this project was adapted from Nicholas Renotte. While the orig
 
 ## Demo 🎬
 
+**The functional Demo** ✅
+
+https://github.com/user-attachments/assets/e72188da-633b-472a-96b2-f934cfb0f9ef
+
+**GPU Demand:** High-Resolution vs. Low-Resolution 💵
+
+https://github.com/user-attachments/assets/bca81654-f65c-45e5-bc24-f046ebd04b02
+
 ## The Code files: 📄
 **app.py:** creates a user-friendly graphical interface for generating images using the Stable Diffusion model. It allows users to input a text prompt, select artistic styles, adjust resolution, and toggle between dark and light themes. The script integrates a pre-trained Stable Diffusion pipeline for image generation, displays the output within the application, and saves the generated image locally.
 
