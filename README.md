@@ -46,14 +46,11 @@ To run the app.py Stable Diffusion project, you'll need to install the following
 ## How to get Hugging FaceToken 🤗
 go to this website: https://huggingface.co/docs/hub/security-tokens
 
-sign-up:
-![image](https://github.com/user-attachments/assets/c4bad170-a606-4bbe-9636-d551e809b93c)
+sign-up: ![image](https://github.com/user-attachments/assets/c4bad170-a606-4bbe-9636-d551e809b93c)
 
-then go to settings and access tokens: 
-![image](https://github.com/user-attachments/assets/736101db-f6bc-4e02-b062-c4637e0342a0)
+then go to settings and access tokens: ![image](https://github.com/user-attachments/assets/736101db-f6bc-4e02-b062-c4637e0342a0)
 
-and create new token (**remember to store your token somewhere safe else they will remove leaked tokens**): 
-![image](https://github.com/user-attachments/assets/72a80eec-cd1e-4a88-8ae8-daae8d1952b1)
+and create new token (**remember to store your token somewhere safe else they will remove leaked tokens**): ![image](https://github.com/user-attachments/assets/72a80eec-cd1e-4a88-8ae8-daae8d1952b1)
 
 
 
