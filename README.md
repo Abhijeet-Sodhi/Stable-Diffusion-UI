@@ -89,9 +89,10 @@ Example: Recovering either a dog or cat image from noise, depending on the learn
 The image space is huge a 512x512 RGB image has ~786,000 dimensions, which makes direct operations computationally expensive. hence why Stable Diffusion works in a **latent space**, a compressed representation of images. 48 times smaller so it reaps the benefit of crunching a lot fewer numbers. That’s why it’s a lot faster.
 
 **The Variational Autoencoder (VAE)** neural network has two parts: 
-**(1)** Encoder compresses an image to a lower dimensional representation in the latent space.
 
-**(2)** Decoder restores the image from the latent space.
+**(1) Encoder** compresses an image to a lower dimensional representation in the latent space.
+
+**(2) Decoder** restores the image from the latent space.
 
 ## Training Stable Diffusion 📚
 
