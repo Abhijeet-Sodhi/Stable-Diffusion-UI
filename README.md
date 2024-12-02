@@ -70,5 +70,53 @@ the **blue arrow** is if you want to add token as a git credential up to you but
 
 the final output should be *Login successful.*
 
+## The Theory: 💡
+Stable Diffusion is a **latent diffusion model** designed to generate images from text. It uses advanced machine learning techniques to efficiently create realistic and creative images. Here's how it works and the key theoretical concepts involved:
+
+**What is a Diffusion Model?**
+These are generative models that learn to create new data (like images) similar to what they've seen during training. Inspired by the concept of physical diffusion (e.g., ink spreading in water), these models corrupt images with noise and then learn to reverse this process.
+
+**Forward Diffusion**
+Images are gradually turned into noise.
+Example: A clear cat image becomes completely random noise.
+![image](https://github.com/user-attachments/assets/22a65eea-78d8-42c7-9e71-5153e29c502b)
+
+**Reverse Diffusion**
+Starting from noise, the model predicts and removes noise step-by-step to recreate an image.
+Example: Recovering either a dog or cat image from noise, depending on the learned patterns.
+![image](https://github.com/user-attachments/assets/27a3766b-f213-403b-a373-832b750c8b4a)
+
+The image space is huge a 512x512 RGB image has ~786,000 dimensions, which makes direct operations computationally expensive. hence why Stable Diffusion works in a **latent space**, a compressed representation of images. 48 times smaller so it reaps the benefit of crunching a lot fewer numbers. That’s why it’s a lot faster.
+
+**The Variational Autoencoder (VAE)** neural network has two parts: 
+**(1)** Encoder compresses an image to a lower dimensional representation in the latent space.
+
+**(2)** Decoder restores the image from the latent space.
+
+##Training Stable Diffusion 📚
+
+**Latent Noise in Latent Space:**
+Instead of directly adding noise to pixel images, noise is added to a compressed latent space (instead of generating a noisy image, it generates a random tensor in latent space (latent noise)). This speeds up training since the latent space is much smaller than pixel space.
+
+**Noise Prediction:**
+A U-Net model learns to predict and remove this noise from the latent space. It is trained using many examples of noisy latent images.
+
+**Reverse Diffusion:**
+During generation, the U-Net removes noise step-by-step from a random latent tensor until a clean latent representation is formed, which is then decoded into the final image.
+
+![cat](https://github.com/user-attachments/assets/b44035cc-29eb-4b1e-8645-58c264fb5da6)
+
+##How Text Guides Image Generation: 🔋
+
+**Tokenization:**
+Words in the text prompt are broken into tokens. For example, "blue sky" becomes tokens for "blue" and "sky."
+
+**Embeddings:**
+Each token is converted into a 768-dimensional vector that captures its meaning. These embeddings represent the prompt in a way the model can understand.
+
+**Cross-Attention:**
+The model links parts of the text (e.g., "blue" and "sky") to parts of the latent image. This ensures the image aligns with the prompt during generation.
+
+![image](https://github.com/user-attachments/assets/9b70e0e6-3feb-464e-ad81-a1377b42698b)
 
 
