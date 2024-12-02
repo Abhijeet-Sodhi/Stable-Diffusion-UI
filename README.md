@@ -58,7 +58,17 @@ and create new token (**remember to store your token somewhere safe else they wi
 
 ![image](https://github.com/user-attachments/assets/72a80eec-cd1e-4a88-8ae8-daae8d1952b1)
 
+## How to run the code: 🛠️
+paste this in terminal: *huggingface-cli login*
 
+**the output** should be like this:
+
+![image](https://github.com/user-attachments/assets/a008142d-9e30-4d2a-bbb9-c84ee473eada)
+the **red arrow** is where you paste the token by just right clicking (**Nothing else**) you will not see it visible but it has been pasted
+
+the **blue arrow** is if you want to add token as a git credential up to you but I did no.
+
+the final output should be *Login successful.*
 
 
 
